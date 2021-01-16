@@ -1,0 +1,36 @@
+{% load static %}
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html" charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+	</head>
+	
+	<body>
+		<div class="main">
+			<p class="logo">
+				<img src="{% static 'img/Image1.png' %}">
+			</p>
+			<p class="user_name">
+				<img src="{% static 'img/Image2.png' %}">
+				User name
+			</p>
+			<p class="pass_word">
+				<img src="{% static 'img/Image3.png' %}">
+				Pass word
+			</p>
+			<p class="login">
+				Log in
+			</p>
+		</div>
+		
+		<div class="footer">
+			<p class="register">
+				Not registerd? <a href="dummy" class="link"> Registration your account </a>
+			</p>
+			<p class="foget_passrowd">
+				<a href="dummy" class="link"> Foget password? </a>
+			</p>
+		</div>
+
+	</body>
+</html>

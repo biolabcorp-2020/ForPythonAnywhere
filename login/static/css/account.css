@@ -1,0 +1,90 @@
+
+body {
+	width: 65%;
+	margin: auto;
+	background-color: #4548e6;
+}
+
+.main {
+	border: medium solid #fff000;
+	margin: 40px auto 110px;
+	/* text-align: center; */
+	display: block;
+	
+	position: relative;
+}
+
+.logo {
+	border: medium solid #fff;
+	margin-bottom: 305px;
+}
+
+.main .user_name {
+	border: medium solid #fff;
+	width: 95%;
+	font-size: 40px;
+	color: #acadf4;
+	margin: auto auto 65px;
+}
+
+.main .pass_word {
+	border: medium solid #fff;
+	width: 95%;
+	font-size: 40px;
+	color: #acadf4;
+	margin: auto auto 300px;
+}
+
+.main .email {
+	border: medium solid #fff;
+	width: 95%;
+	font-size: 40px;
+	color: #acadf4;
+	margin: auto auto 65px;
+}
+
+.main .login {
+	width: 850px;
+	padding: 40px;
+	margin: 150px auto;
+	font-size: 60px;
+	color: #4548e6;
+	background-color: #fff;
+}
+
+.main .next {
+	border: medium solid #fff;
+	width: 435px;
+	height: 140px;
+	font-size: 60px;
+
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	
+	/* 右下へ */
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	
+}
+
+.main .next .link {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer {
+	border: medium solid #fff000;
+	text-align: center;
+	font-size: 55px;
+	color: #fff;
+}
+
+.footer .login {
+	margin-bottom: 65px;
+}
+
+.footer .link {
+	color: #fff;
+}
