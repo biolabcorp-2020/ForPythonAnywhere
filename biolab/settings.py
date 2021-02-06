@@ -25,7 +25,7 @@ SECRET_KEY = 'lze3cf275ryak3y@5houz+g(&%wdx0&m4%wja9m0uo&bw3@x$h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.pythonanywhere.com']
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 	'blog.apps.BlogConfig',
 	'login.apps.LoginConfig',
+	'accounts.apps.AccountsConfig',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +57,9 @@ ROOT_URLCONF = 'biolab.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+			os.path.join(BASE_DIR, 'templates')
+		],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -124,3 +127,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
+# STATICFILES_DIRS = (
+# os.path.join(BASE_DIR, "static"),
+# )
+LOGIN_URL = '/login/'
+LOGIN_ERROR_URL = '/login/'
+LOGIN_REDIREICT_URL = '../'
+# LOGIN_REDIRECT_URL = '/admin'
+# LOGOUT_REDIRECT_URL = '/login'
+
